@@ -1,0 +1,289 @@
+body{
+	background: @lightGrey;
+  min-height: 480px;
+}
+.center-text{
+	text-align: center;
+}
+button a{
+	text-decoration: none;
+	color: #fff;
+}
+form button{
+	margin: auto;
+}
+.header-container{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.wrapper{
+	position: relative;
+}
+.main{
+	.center-text;
+	margin-top: 50px
+}
+.page {
+	display: none;
+}
+input{
+  line-height: 28px;
+  font-size: 20px;
+}
+.first-page {
+	display: block;
+}
+.logo{
+	display: block;
+	margin: 8px auto;	
+}
+.theme{
+    width:300px;
+    height:50px;    
+}
+.theme{
+	border: 2px solid #000;
+    width:100%;
+    height:30px;
+    margin: 5px auto;    
+}
+.color{
+    width:50%;
+    height: 30px;
+    display: inline-block;
+    float: left;
+}
+#no-image{
+  margin-top: 100px;
+}
+
+//front page main style
+.snapper-item{
+	background: @lightBlack;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 4px 0px;
+	width: 850px;
+	cursor: pointer;
+  &:hover{
+    background: lighten(@lightBlack, 20%);  
+  }
+}
+.snapper-item a{
+	text-decoration: none;
+	color: @white;
+	@font-weight: bold;
+	font-size: 22px;
+
+}
+.odd{
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	float: left;
+	text-align: right;
+}
+.even{
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	float: right;
+	text-align: left;
+	.entry-count{
+		float: left;
+	}
+}
+.entry-count{
+	margin: 0 20px 0 10px;
+	background: white;
+	text-align: center;
+	border-radius: 12px;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+}
+
+//modal sign in
+#overlay {
+    display: none; /* ensures it’s invisible until it’s called */
+    position: absolute; /* makes the div go into a position that’s absolute to the browser viewing area */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -140px;
+    padding: 25px; 
+    border: 2px solid black;
+    background-color: #ffffff;
+    height: 150px;
+    width: 280px;
+    text-align: center;
+    z-index: 100; /* makes the div the top layer, so it’ll lay on top of the other content */
+}
+#fade {
+    display: none;  /* ensures it’s invisible until it’s called */
+    position: fixed;  /* makes the div go into a position that’s absolute to the browser viewing area */
+    left: 0%; /* makes the div span all the way across the viewing area */
+    top: 0%; /* makes the div span all the way across the viewing area */
+    background-color: black;
+    -moz-opacity: 0.7; /* makes the div transparent, so you have a cool overlay effect */
+    opacity: .70;
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    z-index: 90; /* makes the div the second most top layer, so it’ll lay on top of everything else EXCEPT for divs with a higher z-index (meaning the #overlay ruleset) */
+}
+//
+//themes
+.themea-color1{
+    background:@a1;
+}
+.themea-color2{
+    background:@a2;
+}
+.themea-color3{
+    background:@a3;
+}
+.themeb-color1{
+    background:@b1;
+}
+.themeb-color2{
+    background:@b2;
+}
+.themeb-color3{
+    background:@b3;
+}
+.themec-color1{
+    background:@c1;
+}
+.themec-color2{
+    background:@c2;
+}
+.themec-color3{
+    background:@c3;
+}
+
+//Spinner
+/* loading spinner */
+.loading-spinner {
+	position: relative;
+	margin: 50px auto 0 auto;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+}
+
+.loading-spinner div{
+	width: 12%;
+	height: 26%;
+	background: black;
+	position: absolute;
+	left: 44.5%;
+	top: 37%;
+	opacity: 0;
+	-webkit-animation: fade 1s linear infinite;
+	-webkit-border-radius: 50px;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.loading-spinner .bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+.loading-spinner .bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+.loading-spinner .bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+.loading-spinner .bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+.loading-spinner .bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+.loading-spinner .bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+.loading-spinner .bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+.loading-spinner .bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+.loading-spinner .bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+.loading-spinner .bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+.loading-spinner .bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+.loading-spinner .bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+@-webkit-keyframes fade {
+	from {opacity: 1;}
+	to {opacity: 0.25;}
+}
+/* Loading Bar */
+.loading-bar{
+  height:20px;
+  width:300px;
+  padding:0px;
+  margin:0px auto;
+}
+.loading-bar span{
+display:inline-block;
+  height:100%;
+  width:100%;
+  border:1px solid #3a710e;
+  border-bottom-color:#3a710e;
+  background-color:#d3d3d3;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  border-radius:20px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+  background-image:
+    -webkit-linear-gradient(
+    -45deg,
+    rgba(83, 154, 26, 1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(83, 154, 26, 1) 50%,
+    rgba(83, 154, 26, 1) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-image:
+    -moz-linear-gradient(
+    -45deg,
+    rgba(83, 154, 26, 1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(83, 154, 26, 1) 50%,
+    rgba(83, 154, 26, 1) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-image:
+    -ms-linear-gradient(
+    -45deg,
+    rgba(83, 154, 26, 1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(83, 154, 26, 1) 50%,
+    rgba(83, 154, 26, 1) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-image:
+    linear-gradient(
+    -45deg,
+    rgba(83, 154, 26, 1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(83, 154, 26, 1) 50%,
+    rgba(83, 154, 26, 1) 75%,
+    transparent 75%,
+    transparent
+  );
+  -webkit-background-size:50px 50px;
+  -moz-background-size:50px 50px;
+  -ms-background-size:50px 50px;
+  background-size:50px 50px;
+  -webkit-animation:move 2s linear infinite;
+  -moz-animation:move 2s linear infinite;
+  -ms-animation:move 2s linear infinite;
+  animation:move 2s linear infinite;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  border-radius:20px;
+  overflow: hidden;
+  -webkit-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+  -moz-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+  -ms-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+  box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+}

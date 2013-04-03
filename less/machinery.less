@@ -1,0 +1,43 @@
+//front page main style
+.snapper-item{
+	background: @lightBlack;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 4px 0px;
+	width: 850px;
+	cursor: pointer;
+  &:hover{
+    background: lighten(@lightBlack, 20%);  
+  }
+}
+.snapper-item a{
+	text-decoration: none;
+	color: @white;
+	@font-weight: bold;
+	font-size: 22px;
+
+}
+.odd{
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	float: left;
+	text-align: right;
+}
+.even{
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	float: right;
+	text-align: left;
+	.entry-count{
+		float: left;
+	}
+}
+.entry-count{
+	margin: 0 20px 0 10px;
+	background: white;
+	text-align: center;
+	border-radius: 12px;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+}
